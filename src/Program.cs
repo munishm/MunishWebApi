@@ -12,7 +12,7 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace CSApp
+namespace MunishWebApi
 {
     /// <summary>
     /// Main application class
@@ -107,7 +107,7 @@ namespace CSApp
         // Log startup messages
         private static void LogStartup(CseLog logger)
         {
-            logger.LogInformation($"CSApp Started", VersionExtension.Version);
+            logger.LogInformation($"MunishWebApi Started", VersionExtension.Version);
         }
 
         // Build the web host
@@ -132,7 +132,7 @@ namespace CSApp
                         logger.AddFilter("Microsoft", Config.LogLevel)
                         .AddFilter("System", Config.LogLevel)
                         .AddFilter("Default", Config.LogLevel)
-                        .AddFilter("CSApp", Config.LogLevel);
+                        .AddFilter("MunishWebApi", Config.LogLevel);
                     }
                 });
 

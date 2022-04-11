@@ -3,12 +3,12 @@
 
 using System;
 using System.Threading.Tasks;
-using CSApp.Model;
+using MunishWebApi.Model;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Logging;
 
-namespace CSApp.Controllers
+namespace MunishWebApi.Controllers
 {
     /// <summary>
     /// Handle the /healthz* requests
